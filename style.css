@@ -3,7 +3,12 @@
    padding: 0;
    margin: 0;
    font-size: 12px;
-   font-family: Helvetica, sans-serif;
+   font-family: 'Open Sans', sans-serif;
+}
+:root{
+   --green:#7acc2d;
+   --white: #fff;
+   --black: #000;
 }
 /* NavBar styles start here */
 .navBar{
@@ -12,8 +17,8 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
-   color: white;
-   background-color:#7acc2d;
+   color: var(--white);
+   background-color:var(--green);
 }
 .navBar__logo{
    width: 60px;
@@ -33,10 +38,10 @@
 }
 li a{
    text-decoration: none;
-   color: black;
+   color: var(--black);
 } 
 li a:hover{
-   color: white;
+   color: var(--white);
 }
 /* NavBar styles finish here */
 
@@ -58,6 +63,7 @@ li a:hover{
    display: flex;
    justify-content: center;
    align-items: flex-start;
+   flex-wrap: wrap;
    margin-top: 60px;
    background-image: url(./pic/wave.svg);
    background-size: cover;
@@ -111,12 +117,172 @@ li a:hover{
    border-radius: 5px;
    font-size: 13px;
    font-weight: bolder;
-   color: white;
-   background-color:#7acc2d;
+   color: var(--white);
+   background-color:var(--green);
    outline: none;
-   box-shadow: 0 2px 5px #7acc2d;
+   box-shadow: 0 2px 5px var(--green);
 }
 .section__products--card input:hover{
    box-shadow: none;
+   cursor: pointer;
+}
+.main__section--benefits{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 400px;
+   /* border: 1px solid red; */
+}
+.benefits__card--one{
+   width: 200px;
+   height: 250px;
+   padding: 15px 10px 10px 10px;
+   margin-right: 30px;
+   box-shadow: 0 -1px 5px #cecece;
+   border-radius: 6px;
+}
+.benefits__card--two{
+   width: 200px;
+   height: 250px;
+   padding: 15px 10px 10px 10px;
+   margin-right: 30px;
+   box-shadow: 0 -1px 5px #cecece;
+   border-radius: 6px;
+}
+.benefits__card--three{
+   width: 200px;
+   height: 250px;
+   padding: 15px 10px 10px 10px;
+   margin-right: 30px;
+   box-shadow: 0 -1px 5px #cecece;
+   border-radius: 6px;
+}
+.benefits__card--one div{
+   width: 100%;
+   height: 150px;
+   border-radius: 5px;
+   background-image: url(./pic/cute.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.benefits__card--two div{
+   width: 100%;
+   height: 150px;
+   border-radius: 5px;
+   background-image: url(./pic/incredible.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.benefits__card--three div{
+   width: 100%;
+   height: 150px;
+   border-radius: 5px;
+   background-image: url(./pic/trust.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.benefits__card--title{
+   font-size: 14px;
+   padding-top: 10px;
+}
+.benefits__card--description{
+   font-size: 10px;
+   color: #757575;
+   padding-top: 5px;
+}
+.division__line{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 10px;
+}
+.main__division--line{
+   color: #cecece;
+   width: 90%;
+   border: 1px solid;
+}
+.main__section--mentions{
+   width: 100%;
+   height: 400px;
+   padding-top: 60px;
+}
+.main__section--mentions h2{
+   text-align: center;
+   font-size: 23px;
+}
+.section__mentions{
+   display: flex;
+   width: 100%;
+   height: 300px;
+   justify-content: center;
+   align-items: flex-start;
+   padding-top: 30px;
+}
+.mention--card{
+   width: 200px;
+   height: 200px;
+   margin-right:30px;
+   box-shadow: 0 -1px 5px #cecece;
+   border-radius: 6px;
+}
+.mention--card:nth-of-type(1) div{
+   width: 100%;
+   height: 100px;
+   border-radius: 5px;
+   background-image: url(./pic/mario.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.mention--card:nth-of-type(2) div{
+   width: 100%;
+   height: 100px;
+   border-radius: 5px;
+   background-image: url(./pic/maria.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.mention--card:nth-of-type(3) div{
+   width: 100%;
+   height: 100px;
+   border-radius: 5px;
+   background-image: url(./pic/joe.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.mention--card:nth-of-type(4) div{
+   width: 100%;
+   height: 100px;
+   border-radius: 5px;
+   background-image: url(./pic/jamaica.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.card__customer--name{
+   padding: 10px 10px 0;
+}
+.benefits__card--description{
+   padding: 0 10px;
 }
 /* main section syles end here  */
+
+/* footer section starts here */
+.footer{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   padding: 15px;
+   color: white;
+   background-color: #323339;
+}
+/* footer section ends here */
