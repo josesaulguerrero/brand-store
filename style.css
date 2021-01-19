@@ -10,6 +10,9 @@
    --white: #fff;
    --black: #000;
 }
+html{
+   font-size: 62.5%;
+}
 /* NavBar styles start here */
 .navBar{
    width: 100%;
@@ -38,8 +41,9 @@
 }
 li a{
    text-decoration: none;
+   font-size: 1.3rem;
    color: var(--black);
-} 
+}
 li a:hover{
    color: var(--white);
 }
@@ -51,20 +55,22 @@ li a:hover{
    height: auto;
 }
 .main__title{
-   width: 50%;
+   width: 90%;
    margin: 0 auto;
-   padding-top: 5%;
-   font-size: 30px;
+   padding-top: 10%;
+   font-size: 25px;
+   line-height: 2.5rem;
    text-align: center;
 }
 .main__section--products{
    width: 100%;
-   height: 400px;
+   height: 600px;
    display: flex;
    justify-content: center;
-   align-items: flex-start;
-   flex-wrap: wrap;
+   align-items: center;
+   flex-direction: column;
    margin-top: 60px;
+   padding-bottom: 50px;
    background-image: url(./pic/wave.svg);
    background-size: cover;
    background-position: center;
@@ -75,10 +81,11 @@ li a:hover{
    max-width: 300px;
    min-width: 180px;
    height: auto;
-   margin-left: 30px;
+   margin-bottom: 20px;
    padding: 15px 10px 10px 10px;
+   border-radius: 5px;
    background-color: white;
-   box-shadow: -1px -2px 10px #cecece; 
+   box-shadow: -1px -2px 10px #cecece;
 }
 .section__products--card div{
    width: 150px;
@@ -101,11 +108,11 @@ li a:hover{
 .section__products--card h2{
    margin-top: 5px;
    font-weight: bold;
-   font-size: 13px;
+   font-size: 1.5rem;
 }
 .section__products--card p{
    margin-top: 7px;
-   font-size: 10px;
+   font-size: 1.2rem;
    color: #757575;
    font-weight: 500;
 }
@@ -127,34 +134,36 @@ li a:hover{
    cursor: pointer;
 }
 .main__section--benefits{
-   display: flex;
-   justify-content: center;
-   align-items: center;
    width: 100%;
-   height: 400px;
+   height: 850px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
    /* border: 1px solid red; */
 }
 .benefits__card--one{
    width: 200px;
-   height: 250px;
+   height: 260px;
+   margin-top: 20px;
    padding: 15px 10px 10px 10px;
-   margin-right: 30px;
    box-shadow: 0 -1px 5px #cecece;
    border-radius: 6px;
 }
 .benefits__card--two{
    width: 200px;
-   height: 250px;
+   height: 260px;
+   margin-top: 20px;
    padding: 15px 10px 10px 10px;
-   margin-right: 30px;
    box-shadow: 0 -1px 5px #cecece;
    border-radius: 6px;
 }
 .benefits__card--three{
    width: 200px;
-   height: 250px;
+   height: 260px;
+   margin-top: 20px;
    padding: 15px 10px 10px 10px;
-   margin-right: 30px;
    box-shadow: 0 -1px 5px #cecece;
    border-radius: 6px;
 }
@@ -186,11 +195,11 @@ li a:hover{
    background-size: cover;
 }
 .benefits__card--title{
-   font-size: 14px;
+   font-size: 1.5rem;
    padding-top: 10px;
 }
 .benefits__card--description{
-   font-size: 10px;
+   font-size: 1.2rem;
    color: #757575;
    padding-top: 5px;
 }
@@ -208,31 +217,37 @@ li a:hover{
 }
 .main__section--mentions{
    width: 100%;
-   height: 400px;
+   height: 1250px;
    padding-top: 60px;
 }
 .main__section--mentions h2{
    text-align: center;
-   font-size: 23px;
+   font-size: 2.5rem;
+   font-weight: bold;
 }
 .section__mentions{
    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   /* flex-wrap: wrap; */
+   flex-direction: column;
    width: 100%;
-   height: 300px;
-   justify-content: center;
-   align-items: flex-start;
+   height: 1050px;
    padding-top: 30px;
 }
 .mention--card{
    width: 200px;
-   height: 200px;
-   margin-right:30px;
+   max-width: 250px;
+   min-width: 180px;
+   height: 270px;
+   margin: 20px 0;
+   padding-bottom: 10px;
    box-shadow: 0 -1px 5px #cecece;
    border-radius: 6px;
 }
 .mention--card:nth-of-type(1) div{
    width: 100%;
-   height: 100px;
+   height: 150px;
    border-radius: 5px;
    background-image: url(./pic/mario.jpg);
    background-size: cover;
@@ -241,7 +256,7 @@ li a:hover{
 }
 .mention--card:nth-of-type(2) div{
    width: 100%;
-   height: 100px;
+   height: 150px;
    border-radius: 5px;
    background-image: url(./pic/maria.jpg);
    background-size: cover;
@@ -250,7 +265,7 @@ li a:hover{
 }
 .mention--card:nth-of-type(3) div{
    width: 100%;
-   height: 100px;
+   height: 150px;
    border-radius: 5px;
    background-image: url(./pic/joe.jpg);
    background-size: cover;
@@ -259,7 +274,7 @@ li a:hover{
 }
 .mention--card:nth-of-type(4) div{
    width: 100%;
-   height: 100px;
+   height: 150px;
    border-radius: 5px;
    background-image: url(./pic/jamaica.jpg);
    background-size: cover;
@@ -267,9 +282,12 @@ li a:hover{
    background-repeat: no-repeat;
 }
 .card__customer--name{
+   font-size: 1.5rem;
    padding: 10px 10px 0;
 }
-.benefits__card--description{
+.mentions__card--description{
+   font-size: 1.2rem;
+   color: #757575;
    padding: 0 10px;
 }
 /* main section syles end here  */
@@ -283,6 +301,77 @@ li a:hover{
    height: 50px;
    padding: 15px;
    color: white;
+   font-size: 1.2rem;
    background-color: #323339;
 }
 /* footer section ends here */
+
+/* media query for tablet */
+@media screen and (min-width: 430px){
+   .main__section--products{
+      flex-direction: row;
+      height: 350px;
+   }
+   .section__products--card:nth-of-type(1){
+      margin-right: 15px;
+   }
+   .main__section--benefits{
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      height: 570px;
+   }
+   .benefits__card--one, .benefits__card--two, .benefits__card--three{
+      margin-top: 20px;
+   }
+   .benefits__card--one{
+      margin-right: 15px;
+   }
+   .main__section--mentions{
+      height: 500px;
+   }
+   .section__mentions{
+      flex-direction: row;
+      height: 400px;
+      overflow-x: scroll;
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x proximity;
+   }
+   .mention--card{
+      margin: 0 10px;
+   }
+   .mention--card:nth-of-type(2){
+      scroll-snap-align: center;
+   }
+   .mention--card:nth-of-type(3){
+      scroll-snap-align: center;
+   }
+}
+@media screen and (min-width: 615px){
+   .main__section--benefits{
+      height: 350px;
+      margin-top: 30px;
+   }
+   .benefits__card--two, .benefits__card--one{
+      margin-right: 5px;
+   }
+}
+@media screen and (min-width: 700px){
+   .section__products--card:nth-of-type(1){
+      margin-right: 25px;
+   }
+   .benefits__card--two, .benefits__card--one{
+      margin-right: 20px;
+   }
+}
+@media screen and (min-width: 800px){
+   .section__mentions{
+      overflow-x: hidden;
+      justify-content: center;
+   }
+}
+@media screen and (min-width: 1000px){
+   .main__title{
+      width: 50%;
+   }
+}
