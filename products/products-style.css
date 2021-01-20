@@ -126,6 +126,7 @@ li a:hover{
    align-self: center;
    font-size: 1.4rem;
    vertical-align: middle;
+   color: #555555;
 }
 .productsSection__secondProduct{
    grid-area: productsSection__secondProduct;
@@ -153,6 +154,7 @@ li a:hover{
    align-self: center;
    font-size: 1.4rem;
    order: -1;
+   color: #555555;
 }
 .productsSection__thirdProduct{
    grid-area: productsSection__thirdProduct;
@@ -179,6 +181,7 @@ li a:hover{
    height: auto;
    align-self: center;
    font-size: 1.4rem;
+   color: #555555;
 }
 /* main section styles end here */
 
@@ -195,3 +198,70 @@ li a:hover{
    background-color: #323339;
 }
 /* footer section ends here */
+
+@media screen and (max-width: 800px){
+   .main{
+      width: 100%;
+      height: 200%;
+      grid-template: 80px 1fr / 100%;
+      grid-template-areas: "title"
+                           "section";
+      background-image: none;
+   }
+   .products__title{
+      grid-area: title;
+   }
+   .main__products{
+      grid-area: section;
+   }
+}
+
+@media screen and (max-width: 690px){
+   .main__products{
+      grid-template: 250px 250px 250px / 1fr;
+      grid-template-areas: "productsSection__firstProduct"
+                        "productsSection__secondProduct"
+                        "productsSection__thirdProduct";
+      gap: 35px;
+   }
+   .productsSection__firstProduct{
+      grid-area: productsSection__firstProduct;
+      flex-direction: column;
+   }
+   .productsSection__firstProduct div{
+      width: 200px;
+      transition: none;
+   }
+   .productsSection__firstProduct p{
+      width: 100%;
+      padding-top: 10px;
+      font-size: 1.2rem;
+   }
+   .productsSection__secondProduct{
+      /* grid-area: productsSection__firstProduct; */
+      flex-direction: column;
+   }
+   .productsSection__secondProduct div{
+      width: 200px;
+      transition: none;
+   }
+   .productsSection__secondProduct p{
+      width: 100%;
+      padding-top: 10px;
+      font-size: 1.2rem;
+      order: unset;
+   }
+   .productsSection__thirdProduct{
+      /* grid-area: productsSection__firstProduct; */
+      flex-direction: column;
+   }
+   .productsSection__thirdProduct div{
+      width: 200px;
+      transition: none;
+   }
+   .productsSection__thirdProduct p{
+      width: 100%;
+      padding-top: 10px;
+      font-size: 1.2rem;
+   }
+}

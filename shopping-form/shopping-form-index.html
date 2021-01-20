@@ -23,15 +23,17 @@
       <!-- here starts the form section -->
       <section class="checking-form"> 
          <h2 class="form__title">Dejanos tus datos :D</h2>
-         <form action="" class="checking-form__form">
+         <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2B8ZTKNXPX8VN" method="POST" class="checking-form__form">
             <label class="form-name" for="Name">Nombre:</label>
-            <input class="form-name__input" type="text" name="Name" required placeholder="Tu nombre" maxlength="50">
+            <input class="form-name__input" type="text" name="Name" id="Name" required placeholder="Tu nombre" maxlength="50">
+            <label for="Phone" class="form-phone">Teléfono:</label>
+            <input class="form-phone__input" type="text" id="Phone" name="Phone" required placeholder="Tu número de teléfono:" maxlength="50">
             <label for="form-email" class="form-email">Email:</label>
-            <input class="form-email__input" type="email" name="Email" required placeholder="Tu em@il" maxlength="50">
+            <input class="form-email__input" type="email" name="Email" id="form-email" required placeholder="Tu em@il" maxlength="50">
             <label Mensaje for="form-textArea" class="form-textArea" >Mensaje:</label>
             <!-- <input type="textarea" class="form-textArea__input" name="Comment"rows="10" cols="40" placeholder="Escribe tu mensaje:"> -->
-            <textarea name="Comment" cols="30" rows="10" class="form-textArea__input" placeholder="Escribe tu mensaje:"></textarea>
-            <input type="submit" class="form-submit" value="Enviar">
+            <textarea name="Comment" cols="30" rows="10" class="form-textArea__input" id="form-textArea" placeholder="Escribe tu mensaje:"></textarea>
+            <input type="submit" class="form-submit" value="Confirmar pago">
          </form>
       </section>
       <!-- here ends the form section -->
