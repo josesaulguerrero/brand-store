@@ -174,11 +174,16 @@ li a:hover{
    transition: transform .2s;
 }
 .products__card--button:active{
-   transform: scale(.9);
+   transform: scale(.95);
 }
 .products__card--button .card__button--link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 100%;
    font-size: 13px;
-   font-weight: bolder;
+   font-weight: bold;
    color: var(--white);
    text-decoration: none;
 }

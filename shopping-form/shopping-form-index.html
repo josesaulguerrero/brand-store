@@ -3,9 +3,39 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Brand | Checking</title>
+   <link rel="stylesheet" href="./shopping-form-style.css">
+   <link rel="stylesheet" href="./shopping-form-style-768px.css" media="(max-width: 768px)">
 </head>
 <body>
-   hola
+   <!-- aquí empieza el nav -->
+   <nav class="navBar">
+      <span class="navBar__logo"><a href="../home/index.html"></a></span>
+      <ul class="navBar__options">
+         <li class="navBar__options--option"><a href="../home/index.html">Home</a></li>
+         <li class="navBar__options--option"><a href="../home/index.html">Productos</a></li>
+      </ul>
+   </nav>
+   <!-- aquí termina el nav -->
+
+   <!-- main section starts here  -->
+   <main class="main">
+      <!-- here starts the form section -->
+      <section class="checking-form"> 
+         <h2 class="form__title">Dejanos tus datos :D</h2>
+         <form action="" class="checking-form__form">
+            <label class="form-name" for="Name">Nombre:</label>
+            <input class="form-name__input" type="text" name="Name" required placeholder="Tu nombre" maxlength="50">
+            <label for="form-email" class="form-email">Email:</label>
+            <input class="form-email__input" type="email" name="Email" required placeholder="Tu em@il" maxlength="50">
+            <label Mensaje for="form-textArea" class="form-textArea" >Mensaje:</label>
+            <!-- <input type="textarea" class="form-textArea__input" name="Comment"rows="10" cols="40" placeholder="Escribe tu mensaje:"> -->
+            <textarea name="Comment" cols="30" rows="10" class="form-textArea__input" placeholder="Escribe tu mensaje:"></textarea>
+            <input type="submit" class="form-submit" value="Enviar">
+         </form>
+      </section>
+      <!-- here ends the form section -->
+   </main>
+   <!-- main section ends here  -->
 </body>
 </html>
