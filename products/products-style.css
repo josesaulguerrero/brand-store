@@ -115,10 +115,6 @@ li a:hover{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   transition: transform .3s;
-}
-.productsSection__firstProduct div:hover{
-   transform: scale(1.5);
 }
 .productsSection__firstProduct p{
    width: 75%;
@@ -143,10 +139,6 @@ li a:hover{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   transition: transform .3s;
-}
-.productsSection__secondProduct div:hover{
-   transform: scale(1.5);
 }
 .productsSection__secondProduct p{
    width: 75%;
@@ -171,10 +163,6 @@ li a:hover{
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
-   transition: transform .3s;
-}
-.productsSection__thirdProduct div:hover{
-   transform: scale(1.5);
 }
 .productsSection__thirdProduct p{
    width: 75%;
@@ -215,7 +203,6 @@ li a:hover{
       grid-area: section;
    }
 }
-
 @media screen and (max-width: 690px){
    .main__products{
       grid-template: 250px 250px 250px / 1fr;
