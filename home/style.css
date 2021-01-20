@@ -171,19 +171,10 @@ li a:hover{
    background-color:var(--green);
    outline: none;
    box-shadow: 0 2px 5px var(--green);
+   transition: transform .2s;
 }
 .products__card--button:active{
-   animation-name: button-effect;
-   animation-duration: .2s;
-   animation-fill-mode: forwards;
-}
-@keyframes button-effect{
-   from{
-      transform: scale(1);
-   }
-   to{
-      transform: scale(0.9);
-   }
+   transform: scale(.9);
 }
 .products__card--button .card__button--link{
    font-size: 13px;
@@ -237,29 +228,16 @@ li a:hover{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   transition: transform .4s;
 }
 .benefits__card--one div:hover{
-   animation-name: bigSize;
-   animation-duration: .3s;
-   animation-fill-mode: forwards;
+   transform: scale(1.4);
 }
 .benefits__card--two div:hover{
-   animation-name: bigSize;
-   animation-duration: .3s;
-   animation-fill-mode: forwards;
+   transform: scale(1.4);
 }
 .benefits__card--three div:hover{
-   animation-name: bigSize;
-   animation-duration: .3s;
-   animation-fill-mode: forwards;
-}
-@keyframes bigSize{
-   from{
-      transform: scale(1);
-   }
-   to{
-      transform: scale(1.4);
-   }
+   transform: scale(1.4);
 }
 .benefits__card--two div{
    width: 100%;
@@ -269,6 +247,7 @@ li a:hover{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   transition: transform .4s;
 }
 .benefits__card--three div{
    width: 100%;
@@ -278,6 +257,7 @@ li a:hover{
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   transition: transform .4s;
 }
 .benefits__card--title{
    font-size: 1.5rem;

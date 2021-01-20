@@ -1,0 +1,8 @@
+.main__section--benefits {
+	height: 350px;
+	margin-top: 30px;
+}
+.benefits__card--two,
+.benefits__card--one {
+	margin-right: 5px;
+}

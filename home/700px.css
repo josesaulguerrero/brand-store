@@ -1,0 +1,6 @@
+.section__products--card:nth-of-type(1){
+   margin-right: 25px;
+}
+.benefits__card--two, .benefits__card--one{
+   margin-right: 20px;
+}

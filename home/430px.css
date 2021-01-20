@@ -1,0 +1,40 @@
+.main__section--products {
+	flex-direction: row;
+	height: 350px;
+}
+.section__products--card:nth-of-type(1) {
+	margin-right: 15px;
+}
+.main__section--benefits {
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	height: 570px;
+}
+.benefits__card--one,
+.benefits__card--two,
+.benefits__card--three {
+	margin-top: 20px;
+}
+.benefits__card--one {
+	margin-right: 15px;
+}
+.main__section--mentions {
+	height: 500px;
+}
+.section__mentions {
+	flex-direction: row;
+	height: 400px;
+	overflow-x: scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x proximity;
+}
+.mention--card {
+	margin: 0 10px;
+}
+.mention--card:nth-of-type(2) {
+	scroll-snap-align: center;
+}
+.mention--card:nth-of-type(3) {
+	scroll-snap-align: center;
+}
