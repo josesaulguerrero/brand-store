@@ -22,6 +22,21 @@ html{
    align-items: center;
    color: var(--white);
    background-color:var(--green);
+   animation-name: navSlide;
+   animation-duration: 3s;
+}
+@keyframes navSlide{
+   0%{
+      position: relative;
+      top: -60px;
+   }
+   70%{
+      position: relative;
+      top: 0px;
+   }
+   to{
+      top: 0px;
+   }
 }
 .navBar__logo{
    width: 60px;
@@ -56,15 +71,29 @@ li a:hover{
 }
 .main__title{
    width: 90%;
+   position: relative;
    margin: 0 auto;
    padding-top: 10%;
    font-size: 25px;
    line-height: 2.5rem;
    text-align: center;
+   animation-name: fadeIn;
+   animation-duration: 1.5s;
+}
+@keyframes fadeIn{
+   from{
+      top: -100px;
+      opacity: 0;
+   }
+   to{
+      top: 0px;
+      opacity: 1;
+   }
 }
 .main__section--products{
    width: 100%;
    height: 600px;
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -86,6 +115,23 @@ li a:hover{
    border-radius: 5px;
    background-color: white;
    box-shadow: -1px -2px 10px #cecece;
+   animation-name: fadeInCard;
+   animation-duration: 3s;
+}
+@keyframes fadeInCard{
+   0%{
+      position: relative;
+      opacity: 0;
+      bottom: -100px;
+   }
+   50%{
+      position: relative;
+      opacity: 0.5;
+      bottom: 0px;
+   }
+   100%{
+      opacity: 1;
+   }
 }
 .section__products--card div{
    width: 150px;
@@ -116,20 +162,36 @@ li a:hover{
    color: #757575;
    font-weight: 500;
 }
-.section__products--card input{
+.section__products--card .products__card--button{
    width: 100%;
    height: 30px;
    margin-top: 10px;
    border: none;
    border-radius: 5px;
-   font-size: 13px;
-   font-weight: bolder;
-   color: var(--white);
    background-color:var(--green);
    outline: none;
    box-shadow: 0 2px 5px var(--green);
 }
-.section__products--card input:hover{
+.products__card--button:active{
+   animation-name: button-effect;
+   animation-duration: .2s;
+   animation-fill-mode: forwards;
+}
+@keyframes button-effect{
+   from{
+      transform: scale(1);
+   }
+   to{
+      transform: scale(0.9);
+   }
+}
+.products__card--button .card__button--link{
+   font-size: 13px;
+   font-weight: bolder;
+   color: var(--white);
+   text-decoration: none;
+}
+.section__products--card .products__card--button:hover{
    box-shadow: none;
    cursor: pointer;
 }
@@ -176,6 +238,29 @@ li a:hover{
    background-repeat: no-repeat;
    background-size: cover;
 }
+.benefits__card--one div:hover{
+   animation-name: bigSize;
+   animation-duration: .3s;
+   animation-fill-mode: forwards;
+}
+.benefits__card--two div:hover{
+   animation-name: bigSize;
+   animation-duration: .3s;
+   animation-fill-mode: forwards;
+}
+.benefits__card--three div:hover{
+   animation-name: bigSize;
+   animation-duration: .3s;
+   animation-fill-mode: forwards;
+}
+@keyframes bigSize{
+   from{
+      transform: scale(1);
+   }
+   to{
+      transform: scale(1.4);
+   }
+}
 .benefits__card--two div{
    width: 100%;
    height: 150px;
@@ -214,6 +299,7 @@ li a:hover{
    color: #cecece;
    width: 90%;
    border: 1px solid;
+   opacity: .9;
 }
 .main__section--mentions{
    width: 100%;
@@ -307,71 +393,3 @@ li a:hover{
 /* footer section ends here */
 
 /* media query for tablet */
-@media screen and (min-width: 430px){
-   .main__section--products{
-      flex-direction: row;
-      height: 350px;
-   }
-   .section__products--card:nth-of-type(1){
-      margin-right: 15px;
-   }
-   .main__section--benefits{
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      height: 570px;
-   }
-   .benefits__card--one, .benefits__card--two, .benefits__card--three{
-      margin-top: 20px;
-   }
-   .benefits__card--one{
-      margin-right: 15px;
-   }
-   .main__section--mentions{
-      height: 500px;
-   }
-   .section__mentions{
-      flex-direction: row;
-      height: 400px;
-      overflow-x: scroll;
-      overscroll-behavior-x: contain;
-      scroll-snap-type: x proximity;
-   }
-   .mention--card{
-      margin: 0 10px;
-   }
-   .mention--card:nth-of-type(2){
-      scroll-snap-align: center;
-   }
-   .mention--card:nth-of-type(3){
-      scroll-snap-align: center;
-   }
-}
-@media screen and (min-width: 615px){
-   .main__section--benefits{
-      height: 350px;
-      margin-top: 30px;
-   }
-   .benefits__card--two, .benefits__card--one{
-      margin-right: 5px;
-   }
-}
-@media screen and (min-width: 700px){
-   .section__products--card:nth-of-type(1){
-      margin-right: 25px;
-   }
-   .benefits__card--two, .benefits__card--one{
-      margin-right: 20px;
-   }
-}
-@media screen and (min-width: 800px){
-   .section__mentions{
-      overflow-x: hidden;
-      justify-content: center;
-   }
-}
-@media screen and (min-width: 1000px){
-   .main__title{
-      width: 50%;
-   }
-}
