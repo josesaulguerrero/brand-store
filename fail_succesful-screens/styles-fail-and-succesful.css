@@ -1,0 +1,62 @@
+*{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+   font-size: 12px;
+   font-family: 'Open Sans', sans-serif;
+}
+:root{
+   --green:#7acc2d;
+   --white: #fff;
+   --black: #000;
+}
+html{
+   font-size: 62.5%;
+   height: 100%;
+   width: 100%;
+   background-color: #24262e;
+}
+body{
+   height: 100%;
+}
+.main{
+   width: 100%;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.main .picture{
+   width: 200px;
+   height: 200px;
+   background-image: url(./pic/cat-box.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.main .picture-fail{
+   width: 200px;
+   height: 200px;
+   background-image: url(./pic/man-box.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.main .congratulations{
+   font-size: 2rem;
+   font-weight: bold;
+   color: white;
+   margin-top: 10px;
+   text-align: center;
+}
+.main .paragraph{
+   font-size: 1.6rem;
+   color: white;
+   margin-top: 10px;
+   text-align: center;
+}
+.paragraph a{
+   color: white;
+   font-size: 1.6rem;
+}
